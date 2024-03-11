@@ -1,0 +1,1243 @@
+:root{
+    --font-family-m:'Merriweather',sans-serif;
+    --font-family-i:'Irina Serif',sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+/*ГЛАВНАЯ СТРАНИЦА*/
+/*шапка*/
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.header{
+    background-color: rgba(151, 131, 131, 1);
+}
+
+.header-ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+    
+}
+
+
+.logo{
+    font-family: var(--font-family-m);
+    font-weight: 400;
+    font-size: 55px;
+    color: white;
+   margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img{
+   
+    width: 10vw;
+    height: 8vh;
+}
+
+.nav{
+    display: flex;
+    gap: 50px;
+    text-transform: uppercase;
+    font-family: var(--font-family-m);
+    color: white;
+    padding-top: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: 24px;
+}
+.nav a:hover{
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
+
+
+#qwe{
+    display: none;
+}
+
+/*баннер*/
+.banner {
+    position: relative;
+   
+    
+}
+.banner img{
+    width: 100%;
+    height: 900px;
+    filter: brightness(50%)
+}
+
+
+.banner_p{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    width: 15vw;
+   
+    
+    
+}
+ .banner h1{
+    
+    font-size: 75px;
+    font-weight: 400;
+    font-family: var(--font-family-m);
+    color: white;
+    text-transform: uppercase;
+    width: 10vw;
+    
+    
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 27%;
+    margin-left: 20%;
+    
+}
+
+.banner p{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-family: var(--font-family-m);
+    color: white;
+    width: 20%;
+    
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 54%;
+    margin-left: 19%;
+    
+
+}
+
+.banner button{
+    outline: none;
+    border: none;
+    background-color: rgba(116, 98, 145, 0.9216);
+    color: white;
+    font-size: 25px;
+    font-family: var(--font-family-m);
+    cursor: pointer;
+    padding: 13px 25px;
+    border-radius: 15px;
+    width: 200px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 75%;
+    margin-left: 23%;
+}
+
+.banner button:hover{
+    background-color: rgba(255, 255, 255, 0.922);
+    color: rgb(0, 0, 0);
+    transition: all 0.4s ease-in-out;
+
+}
+
+/* актуально*/
+
+
+.stock-tovar{
+    margin-top: x;
+
+}
+
+.heads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    margin: 100px 0;
+    
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-family-m);
+    font-size: 60px;
+    font-weight: 500;
+    
+}
+
+.cards {
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+   
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.cards img:hover{
+    transform: scale(1.1);
+    
+}
+
+.text_act{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-family-m);
+    font-size: 36px;
+
+    gap: 3px;
+
+    margin-top: 30px;
+
+    letter-spacing: 2px;
+
+}
+
+.heads button{
+    outline: none;
+    border: none;
+    background-color: rgba(116, 98, 145, 0.9216);
+    color: white;
+    font-size: 40px;
+    font-family: var(--font-family-m);
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 15px;
+    width: 350px;
+
+
+}
+.heads button:hover{
+    background-color:  rgba(151, 131, 131, 1);
+    color: rgb(0, 0, 0);
+    transition: all 0.4s ease-in-out;
+
+
+    
+}
+
+
+/* о нас*/
+.inf{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+    margin: 0 auto;
+   
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-family-m);
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.first{
+    font-size: 80px;
+    font-weight: 400;
+}
+.second{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgba(151, 131, 131, 1);
+
+}
+
+.th{
+    font-size: 26px;
+   
+}
+
+
+.inf_img{
+  
+    justify-content: center;
+}
+
+
+/*категории*/
+
+.kategories{
+    padding-top: 150px;
+    display: flex;
+   flex-direction: row;
+   text-align: center;
+   justify-content: center;
+    align-items: center;
+    gap: 140px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+   
+}
+.kat{
+    position: relative;
+}
+
+.kat img{
+    filter: brightness(70%);
+    cursor: pointer;
+   
+   
+}
+
+.kat img:hover{
+    filter: brightness(100%);
+  
+}
+
+.kat p{
+    font-size: 50px;
+    font-family: var(--font-family-m);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+
+.pcla_f{
+    position: absolute;
+    left: 20%;
+    right: 0%;
+    top: 60%;
+}
+
+
+/*footer*/
+
+
+.footer{
+    margin-top: 120px;
+    background-color: rgba(151, 131, 131, 1);
+}
+
+.footer-ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+    
+}
+
+.logo_f{
+    font-family: var(--font-family-m);
+    font-weight: 400;
+    font-size: 55px;
+    color: white;
+   margin-top: 50px;
+    
+}
+
+
+
+.nav_f{
+    display: flex;
+    gap: 50px;
+    text-transform: uppercase;
+    font-family: var(--font-family-m);
+    color: white;
+    padding-top: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: 24px;
+}
+.nav_f a:hover{
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+}
+
+.adres{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+   
+    font-family: var(--font-family-m);
+    color: white;
+    padding-top: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    cursor: pointer;
+}
+.icon img:hover {
+   transform: scale(1.2)
+}
+  /*katalog*/
+ #k{
+    color: black;
+ }
+  .cards_kat {
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+   
+    margin-top: 130px;
+    gap: 120px;
+}
+
+.heads_kat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    margin: 100px 0;
+    
+
+    
+}
+.heads_kat p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-family-m);
+    font-size: 60px;
+    font-weight: 500;
+}
+.sort{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 24px;
+    font-family: var(--font-family-m);
+    text-transform: uppercase;
+}
+
+.sort button{
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.sort button:hover{
+    border-radius: 10px;
+    border: none;
+    background-color:rgba(116, 98, 145, 0.9216);
+    color: white;
+    font-size: 25px;
+    transition: all 0.4s ease-in-out;
+   
+}
+
+.sort_m{
+    display: none;
+
+
+}
+.ic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.kup{
+    display: none;
+}
+#o{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+.first_k{
+    font-size: 48px;
+    font-weight: 400;
+    padding: 0 40px;
+}
+.second_k{
+    font-size: 38px;
+    color: rgba(151, 131, 131, 1);
+    padding: 0 30px;
+
+}
+
+.th_k button{
+    outline: none;
+    border: none;
+    background-color: rgba(151, 131, 131, 1);
+    color: white;
+    font-size: 25px;
+    font-family: var(--font-family-m);
+    cursor: pointer;
+    padding: 13px 25px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    width: 200px;
+    font-family: var(--font-family-m);
+
+   
+}
+.th_k button:hover{
+  
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    
+
+   
+}
+
+.img_cards:hover{
+    transform: scale(1.1);
+}
+
+/*один товар*/
+
+  
+
+
+.containerr{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.kartochka{
+    
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        margin: 0 auto;
+       
+}
+.fot img:hover{
+    transform: scale(1.1);
+}
+
+#ss{
+    display: none;
+    font-size: 18px;
+}
+
+.podr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-family-m);
+    gap: 18px;
+    flex-wrap: wrap;
+}
+#s{
+    font-size: 65px;
+}
+
+#r{
+    font-size: 27px;
+    color:  rgba(151, 131, 131, 1);
+}
+#mm{
+    display: none;
+  
+}
+.input_form{
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    border: 5px solid rgba(116, 98, 145, 0.9216) ;
+    color: rgba(151, 131, 131, 1) ;
+    font-size: 28px;
+}
+
+.knop{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    cursor: pointer;
+}
+.knop button{
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255) ;
+    border: none;
+    background-color:  rgba(116, 98, 145, 0.9216);
+    font-size: 30px;
+    cursor: pointer;
+    font-family: var(--font-family-m)
+
+}
+.knop button:hover{
+    background-color:  rgb(180, 165, 165) ;
+    color: black;
+    border: 2px solid black;
+ 
+ }
+.knop img:hover{
+    transform: scale(1.2);
+}
+
+#nn{
+display: none;
+width: 140px;
+height: 25px;
+border-radius: 10px;
+color: rgb(255, 255, 255) ;
+background-color:  rgba(116, 98, 145, 0.9216);
+cursor: pointer;
+font-size: 9px;}
+
+#nn:hover{
+    background-color:  rgb(180, 165, 165) ;
+    color: black;
+    border: 2px solid black;
+ 
+ }
+
+.strana{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 22px;
+    text-align: left;
+}
+
+#b{
+    font-size: 60px;
+}
+.cards_t {
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+   
+    margin-top: 50px;
+    gap: 100px;
+}
+
+/*korzina*/
+
+.headerr{
+    background-color: rgba(151, 131, 131, 1);
+    margin-bottom: 80px;
+}
+.containerrr{
+    max-width: 900px;
+    margin: 0 auto;
+   
+}
+
+.kartochkaa{
+    
+    padding: 90px 70px;;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 23px;
+   
+}
+.nach{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+
+}
+#ko{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: var(--font-family-m);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+#d:hover{
+    transform: scale(1.1);
+    
+}
+
+#d{
+    width: 300px;
+    height: 350px;
+}
+.korz #s{
+    font-size: 42px;
+
+}
+.korz #v{
+    font-size: 35px ;
+    color:rgba(151, 131, 131, 1) ;
+}
+.korz #b{
+    font-size: 40px;
+}
+
+#sum{
+    font-size: 40px;
+    font-family: var(--font-family-m);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.zakaz{
+    font-family: var(--font-family-m);
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    margin-top: 20px;
+    padding: 0 30px;
+
+    
+}
+.t{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color:rgba(151, 131, 131, 1) ;
+}
+#it{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 35px;
+}
+.s{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color:rgba(151, 131, 131, 1) ;
+}
+#itt{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 35px;
+}
+
+
+#g{
+  
+    width: 350px;
+    font-family: var(--font-family-m);
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(255, 255, 255) ;
+    background-color:  rgba(116, 98, 145, 0.9216);
+    font-size: 30px;
+    cursor: pointer;
+    margin: 50px 0 0 210px;
+    text-transform: uppercase;
+}
+
+#g:hover{
+    background-color: rgb(180, 165, 165) ;
+    color: black;
+    border: 2px solid black;
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+
+    .container{
+       max-width:380px;
+       margin: 0 auto;
+
+    }
+
+    .logo{
+        font-size: 20px;
+       
+       
+    }
+   
+    .logo img{
+        width: 13vw;
+        height: 5vh;
+    }
+
+    .logo p{
+        margin-left: 100px;
+    
+    }
+
+    #qwe {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-top:20px ;
+     }
+    
+    .nav{
+        display: none;
+
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .banner img{
+        width: 100%;
+        height: 240px;
+      
+    }
+
+    .banner h1{
+       margin-left: 27%;
+        font-size: 18px;
+        top: 23%;
+        
+        
+
+    }
+    .banner p{
+        font-size: 9px;
+        width: 38%;
+        top: 50%;
+    }
+
+    .banner button{
+        font-size: 10px;
+        padding: 6px 10px;
+        width: 90px;
+        margin-left: 26%;
+
+
+    }
+
+    .cards{ 
+        max-width: 350px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+    }
+    .cards_t{ 
+        max-width: 350px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+    
+    .cards_t img{
+        width:200px ;
+        
+    }
+
+    
+
+
+    .cards img{
+        width:120px ;
+        
+    }
+    .heads{
+        margin: 40px 0;
+        font-size: 13px;
+    }
+
+ .card-stock:nth-child(3){
+        display: none;
+    }
+    .text_act{
+        font-size: 12px;
+         margin-top: 15px;
+    }
+
+    .heads button{
+        font-size: 10px;
+        padding: 6px 10px;
+        width: 110px;
+        
+
+
+    }
+    
+.inf{
+    gap: 30px;
+    padding:30px 20px;
+}
+.text{
+    gap: 15px;
+}
+.first{
+    font-size: 16px;
+    font-weight: 400;
+}
+.second{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(151, 131, 131, 1);
+
+}
+
+.th{
+    font-size: 9px;
+   
+}
+.first_k{
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.second_k{
+    padding: 5px;
+    font-size: 12px;
+    
+    color: rgba(151, 131, 131, 1);
+
+}
+
+.th_k button{
+    font-size: 9px;
+    width: 100px;
+   
+}
+
+.inf_img img{
+    height: 160px;
+    width: 140px;
+}
+  
+.kategories{
+    padding-top: 30px;
+    gap: 40px;
+}
+
+.kat p{
+    font-size: 15px;
+}
+
+.kat img{
+     width: 140px;
+     height: 120px;
+   
+   
+}
+
+.footer{
+    margin-top: 50px;
+}
+
+.footer-ul{
+
+    gap: 20px;
+ 
+}
+
+
+.logo_f{
+  
+    font-size: 20px;
+    color: white;
+   
+    
+}
+.nav_f{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.adres{
+    font-size: 10px;
+    gap: 20px;
+}
+
+.icon img{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.heads_kat{
+    margin: 20px 0;
+    font-size: 10px;
+}
+.heads_kat p {
+   
+    font-size: 13px;
+}
+.sort{
+    display: none;
+}
+.sort_m{
+    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: var(--font-family-m);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.sort_mm{
+    width: 90px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(116, 98, 145, 0.9216) ;
+    color: rgba(151, 131, 131, 1) ;
+    font-size: 12px;
+    text-align: center;
+
+}
+#o {
+   margin-top: 5px;
+    font-size: 9px;
+}
+
+
+
+.cards_kat{ 
+    max-width: 350px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 30px;
+
+}
+
+.cards_kat img{
+    width:120px ;
+    
+}
+.ic{
+   display: none;
+}
+.kup{
+    display: block;
+    display: flex;
+    gap: 8px;
+}
+.kup button{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgba(116, 98, 145, 0.9216) ;
+    color: rgb(0, 0, 0) ;
+    font-size: 9px;
+    text-align: center;
+}
+.kup button:hover{
+    
+    background-color: rgba(116, 98, 145, 0.9216);
+    border: none;
+    color: rgb(255, 255, 255) ;
+    
+}
+.kartochka{
+
+    padding-top: 40px;
+    gap: 30px;
+}
+
+#ss{
+    display: block;
+    font-family: var(--font-family-m);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.fot{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.fot img{
+
+    width: 140px;
+    height: 180px;
+}
+
+.podr{
+     margin: 0 auto; 
+    gap: 10px;
+}
+#s{
+    display: none;
+}
+#r
+ {font-size: 13px;
+}
+#mm{
+    display: block;
+    font-size: 16px;
+}
+
+.input_form{
+
+    width: 190px;
+    height: 20px;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid  rgba(116, 98, 145, 0.9216) ;
+}
+
+.knop{
+    gap: 10px;
+}
+
+.knop button{
+    width: 140px;
+    height: 25px;
+    border-radius: 10px;
+    
+    font-size: 9px;
+
+}
+
+.knop img{
+    display: none;
+}
+#nn{
+    display: block;
+}
+
+.strana{
+    gap: 3px;
+    font-size: 10px;
+}
+#b{
+    display: none;
+}
+.headerr{
+   
+    margin-bottom: 30px;
+}
+.containerrr{
+    max-width: 350px;
+}
+
+.kartochkaa{
+    
+    padding: 20px 15px;
+
+
+   
+   
+}
+#ko{
+    font-size: 16px;
+}
+#d{
+    width: 75px;
+    height: 90px;
+}
+.korz #s{
+    font-size: 16px;
+    display: block;
+}
+.korz #v{
+    font-size: 13px ;
+  
+}
+.korz #b{
+    font-size: 13px;
+    display: block;
+}
+#sum{
+    font-size: 16px;
+}
+.zakaz{
+    font-size: 13px;
+}
+
+#it, #itt{
+    font-size: 14px;
+}
+
+#g{
+  
+    width: 150px;
+    
+    height: 35px;
+   
+   
+    font-size: 12px;
+   
+    margin: 20px 0 0 90px;
+}
+
+
+}
